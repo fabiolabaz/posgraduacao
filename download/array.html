@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+
+    <script>
+const carros = ['Gol', 'Fusca', 'Virtus', 'Ka']
+
+console.table(carros)
+
+carros.push('Fiesta')  /*Acrescenta na lista */
+carros.unshift('Palio') /*Acrescenta o item no topo da lista */
+console.table(carros)
+
+
+carros.pop()  /*retira o último item da lista */
+carros.shift() /*retira o primeiro item da lista */
+
+
+
+/* carros.splice(1, 2) 
+Splice serve para: (1,2) exclui 2 itens a partir da posição 1 
+(3, 0, 'Uno') adicionar o item 'Uno' na posição 3
+(1,1, 'Uno') adicionar o item 'Uno' na posição 1 após apagar o item que estava lá
+*/
+
+
+carros.sort() /*em ordem alfabética */
+console.table(carros)
+
+    </script>
+</head>
+<body>
+</body>
+</html>

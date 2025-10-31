@@ -1,0 +1,66 @@
+body{
+    background-color: rgba(71, 7, 7, 0.089);
+    color: white;
+    margin: 0;
+}
+
+h1, h2 {
+color: red;
+text-align: center;
+}
+h1 {
+text-transform: uppercase;
+
+}
+
+p {
+text-align: justify;
+color: white
+
+}
+header{
+background-color: rgb(221, 212, 212) ;
+
+}
+
+header{
+background-color: azure;
+color: rgba(71, 7, 7, 0.089);
+}
+
+main{
+margin: auto 20%;
+
+}
+
+footer{
+background-color: rgb(2, 26, 26);
+color: azure
+
+}
+
+.destaque {
+background-color: brown;
+color: azure;
+padding: 20px;
+margin-bottom: 20px;
+
+}
+
+#img-logo{
+width: 50px;
+
+}
+nav li{
+display: inline;
+margin-left: 20px;
+color: rgb(223, 92, 92);
+font-weight: bold;
+border: 2px solid rgb(223, 92, 92);
+padding: 5px;
+}
+
+nav{
+float: right;
+
+}

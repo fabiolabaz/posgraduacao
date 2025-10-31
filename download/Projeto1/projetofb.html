@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lojinha da Unidade</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<h1>Lojinha da Unidade</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Imagem</th>
+            <th>Produto</th>
+            <th>Preço Unitário</th>
+            <th>Qtd.</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><img src="celular4.jpeg" alt="celular" width="100"></td>
+            <td>Celular Top <br>Código: 123456789 <br>Cor: Vermelho</td>
+            <td class="preco">R$ 1000</td>
+            <td><input type="number" class="quantidade" min="0" oninput="calcularTotal()"></td>
+            <td class="total">R$ 0</td>
+        </tr>
+        <tr>
+            <td><img src="Tablet.png" alt="tablet" width="100"></td>
+            <td>Tablet Top <br>Código: 123456790 <br>Cor: Preto</td>
+            <td class="preco">R$ 3000</td>
+            <td><input type="number" class="quantidade" min="0" oninput="calcularTotal()"></td>
+            <td class="total">R$ 0</td>
+        </tr>
+        <tr>
+            <td><img src="monitor.jpeg" alt="monitor" width="100"></td>
+            <td>Monitor Top <br>Código: 123456791 <br>Cor: Prata</td>
+            <td class="preco">R$ 6000</td>
+            <td><input type="number" class="quantidade" min="0" oninput="calcularTotal()"></td>
+            <td class="total">R$ 0</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Subtotal: <span id="subtotal">R$ 0</span></h2>
+
+</body>
+</html>

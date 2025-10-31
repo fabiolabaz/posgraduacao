@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lojinha da Unidade</title>
+
+<!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/stylee.css">
+    <script src="js/funcoes.js" ></script>
+
+</head>
+<body>
+<div class="container">
+    <h1> <i class="bi bi-cart-check"></i>Lojinha da Unidade</h1>
+    
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Imagem</th>
+                <th>Produto</th>
+                <th>Preço Unitário</th>
+                <th>Qtd.</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="celular4.jpeg" alt="celular" width="100"></td>
+                <td>Celular Top <br><span class="produtoitem">Código:</span> 123456789 <br><span class="produtoitem">Cor:</span> Vermelho</td>
+                <td id="valor_1">1000</td>
+                <td>
+                    <span class="badge text-bg-danger" onclick="alterarQtd(1, '-')"><i class="bi bi-dash"></i></span>
+                    <span id="qtd_1">0</span>
+                    <span class="badge text-bg-success" onclick="alterarQtd(1, '+')"><i class="bi bi-plus"></i></span>
+                </td>
+                <td id="total_1">0</td>
+            </tr>
+            <tr>
+                <td><img src="Tablet.png" alt="tablet" width="100"></td>
+                <td>Tablet Top <br>
+                    <span class="produtoitem">Código:</span> 123456790 <br><span class="produtoitem">Cor:</span> Preto</td>
+                <td id="valor_2">3000</td>
+                <td>
+                    <span class="badge text-bg-danger" onclick="alterarQtd(2, '-')"><i class="bi bi-dash"></i></span>
+                    <span id="qtd_2">0</span>
+                    <span class="badge text-bg-success"onclick="alterarQtd(2, '+')"><i class="bi bi-plus"></i></span>
+                </td>
+                <td id="total_2"> 0</td>
+            </tr>
+            <tr>
+                <td><img src="monitor.jpeg" alt="monitor" width="100"></td>
+                <td>Monitor Top <br><span class="produtoitem">Código:</span> 123456791 <br><span class="produtoitem">Cor:</span> Prata</td>
+                <td id="valor_3">6000</td>
+                <td>
+                    <span class="badge text-bg-danger"onclick="alterarQtd(3, '-')"><i class="bi bi-dash"></i></span>
+                    <span id="qtd_3">0</span>
+                    <span class="badge text-bg-success"onclick="alterarQtd(3, '+')"><i class="bi bi-plus"></i></span>
+                </td>
+                <td id="total_3">0</td>
+            </tr>
+        </tbody>
+    </table>
+    <footer>
+    <h2 class="text-center">
+        <i class="bi bi-cart"></i>
+        Subtotal: <span id="subtotal">0</span>
+      </h2>
+    </footer>
+</div>
+
+</body>
+</html>
